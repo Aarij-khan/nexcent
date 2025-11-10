@@ -28,7 +28,7 @@ function Clients() {
             breakpoints={{
               320: {
                 // mobile
-                slidesPerView: 1,
+                slidesPerView: 2,
                 spaceBetween: 10,
               },
               640: {

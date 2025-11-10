@@ -6,7 +6,7 @@ function Community() {
       <div className="max-w-[1480px] mx-auto">
         <div className="w-[90%] mx-auto">
           <div className="w-full py-8 flex flex-col gap-2">
-            <p className="text-[46px] text-[#4D4D4D] font-bold max-w-[700px] leading-[55px] mx-auto text-center">
+            <p className="text-[35px] md:text-[46px] text-[#4D4D4D] font-bold max-w-[700px] leading-[55px] mx-auto text-center">
               Manage your entire community in a single system
             </p>
             <p className="text-gray-500 text-center text-[16px]">
