@@ -11,14 +11,14 @@ function About({ imageSrc, title, description, buttonText }: AboutProps) {
   return (
     <div className="w-full bg-white">
       <div className="max-w-[1480px] mx-auto">
-        <div className="w-[90%] mx-auto flex flex-col md:flex-row gap-6 justify-between items-center">
+        <div className="w-[90%]  mx-auto flex flex-col md:flex-row gap-6 justify-between items-center">
           <div className="w-full md:w-1/2">
             <Image
               src={imageSrc}
               alt="About Image"
               width={500}
               height={500}
-              className="w-full h-full object-cover"
+              className="w-full h-auto object-cover"
             />
           </div>
 
