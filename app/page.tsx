@@ -2,6 +2,8 @@ import About from "./components/about";
 import Banner from "./components/banner";
 import Blogs from "./components/blogs";
 import Community from "./components/community";
+import Demo from "./components/demo";
+import Footer from "./components/footer";
 import Header from "./components/header";
 import Hero from "./components/hero";
 import Clients from "./components/our-clients";
@@ -27,7 +29,8 @@ export default function Page() {
         buttonText="Learn more"
       />
       <Blogs />
-      <Banner />
+      <Demo />
+      <Footer />
     </>
   );
 }
