@@ -44,16 +44,13 @@ function Clients() {
             }}
           >
             {clients.map((img, i) => (
-              <SwiperSlide
-                key={i}
-                className="flex justify-center items-center"
-              >
+              <SwiperSlide key={i} className="flex justify-center items-center cursor-pointer">
                 <Image
                   src={img}
                   alt={`Client ${i + 1}`}
-                  width={80}
-                  height={80}
-                  className="w-[70px] h-auto object-contain"
+                  width={200} // increase internal render width
+                  height={200}
+                  className="w-[80px] h-[50px] object-cover" // display size
                 />
               </SwiperSlide>
             ))}
