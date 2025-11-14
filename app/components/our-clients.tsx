@@ -5,16 +5,15 @@ import { Autoplay } from "swiper/modules";
 import Image from "next/image";
 
 const clients = [
-  "/client-1.png",
-  "/client-2.png",
-  "/client-3.png",
-  "/client-4.png",
-  "/client-5.png",
-  "/client-2.png",
-  "/client-6.png",
-  "/client-7.png",
-  "/client-4.png",
-  "/client-4.png",
+  "/client-1.svg",
+  "/client-2.svg",
+  "/client-3.svg",
+  "/client-4.svg",
+  "/client-5.svg",
+  "/client-2.svg",
+  "/client-1.svg",
+  "/client-3.svg",
+  "/client-5.svg",
 ];
 
 function Clients() {
