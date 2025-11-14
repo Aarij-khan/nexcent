@@ -10,8 +10,8 @@ function Banner() {
   return (
     <div className="w-full bg-[#F5F7FA]">
       <div className="max-w-[1480px] mx-auto">
-        <div className="w-[90%] my-2 h-[40vh] mx-auto flex flex-col md:flex-row gap-6 justify-between items-center">
-          <div className="w-full md:w-1/2">
+        <div className="w-[90%] my-10 py-4 md:h-[40vh] mx-auto flex flex-col md:flex-row gap-10 md:gap-6 justify-between items-center">
+          <div className="w-full md:w-1/2 text-center md:text-left">
             <h2 className="text-[36px] font-semibold text-[#4D4D4D] leading-[44px]">
               Helping a local <br />{" "}
               <span className="text-[#4CAF4F]">business reinvent itself</span>
@@ -20,7 +20,7 @@ function Banner() {
               We reached here with our hard work and dedication
             </p>
           </div>
-          <div className="w-full md:w-1/2 grid grid-cols-2 gap-4 space-y-4">
+          <div className="w-full md:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-4 space-y-4">
               {stats.map((item, index) => (
                 <div key={index} className="flex items-start gap-4">
                   <Image
