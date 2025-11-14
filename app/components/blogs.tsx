@@ -40,7 +40,7 @@ function Blogs() {
                   className="cursor-pointer rounded-lg"
                 />
 
-                <div className="absolute space-y-1.5 p-4 md:bottom-[-2rem] lg:bottom-[-4rem] left-1/2 transform -translate-x-1/2 w-[80%] bg-[#F5F7FA] lg:h-[140px] rounded-lg text-center">
+                <div className="absolute space-y-1.5 p-4 bottom-[-2rem] lg:bottom-[-4rem] left-1/2 transform -translate-x-1/2 w-[80%] bg-[#F5F7FA] lg:h-[140px] rounded-lg text-center">
                   <h3 className="lg:text-[20px] leading-[28px]">{item.title}</h3>
                   <p className="text-[#4CAF4F] text-[16px] cursor-pointer">
                     Read more &rarr;
