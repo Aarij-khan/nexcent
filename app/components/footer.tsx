@@ -34,7 +34,7 @@ function Footer() {
               ))}
             </div>
           </div>
-          <div className="md:justify-self-end">
+          <div className="lg:justify-self-end">
             <h1 className="text-white text-[20px] mb-4 font-semibold">
               Company
             </h1>
@@ -46,7 +46,7 @@ function Footer() {
               <p>Testimonials</p>
             </div>
           </div>
-          <div className="md:justify-self-end">
+          <div className="lg:justify-self-end">
             <h1 className="text-white text-[20px] mb-4 font-semibold">
               Support
             </h1>

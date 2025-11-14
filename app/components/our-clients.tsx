@@ -1,10 +1,21 @@
 "use client";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import "swiper/css/pagination";
 import { Autoplay } from "swiper/modules";
 import Image from "next/image";
-import Community from "./community";
+
+const clients = [
+  "/client-1.png",
+  "/client-2.png",
+  "/client-3.png",
+  "/client-4.png",
+  "/client-5.png",
+  "/client-2.png",
+  "/client-6.png",
+  "/client-7.png",
+  "/client-4.png",
+  "/client-4.png",
+];
 
 function Clients() {
   return (
@@ -26,118 +37,26 @@ function Clients() {
             }}
             className="w-[90%] mx-auto h-full my-6"
             breakpoints={{
-              320: {
-                // mobile
-                slidesPerView: 2,
-                spaceBetween: 10,
-              },
-              640: {
-                // small tablets
-                slidesPerView: 2,
-                spaceBetween: 15,
-              },
-              1024: {
-                // laptops
-                slidesPerView: 4,
-                spaceBetween: 20,
-              },
-              1280: {
-                // large screens
-                slidesPerView: 7,
-                spaceBetween: 10,
-              },
+              320: { slidesPerView: 2, spaceBetween: 10 },
+              640: { slidesPerView: 3, spaceBetween: 15 },
+              1024: { slidesPerView: 4, spaceBetween: 20 },
+              1280: { slidesPerView: 7, spaceBetween: 10 },
             }}
           >
-            <SwiperSlide className="text-[18px] flex justify-center items-center">
-              <Image
-                src="/client-1.png"
-                alt="Client 1"
-                width={80}
-                className="object-cover"
-                height={80}
-              />
-            </SwiperSlide>
-            <SwiperSlide className="text-[18px] flex justify-center items-center">
-              <Image
-                src="/client-2.png"
-                alt="Client 1"
-                width={80}
-                className="object-cover"
-                height={80}
-              />
-            </SwiperSlide>
-            <SwiperSlide className="text-[18px] flex justify-center items-center">
-              <Image
-                src="/client-3.png"
-                alt="Client 1"
-                width={80}
-                className="object-cover"
-                height={80}
-              />
-            </SwiperSlide>
-            <SwiperSlide className="text-[18px] flex justify-center items-center">
-              <Image
-                src="/client-4.png"
-                alt="Client 1"
-                width={80}
-                className="object-cover"
-                height={80}
-              />
-            </SwiperSlide>
-            <SwiperSlide className="text-[18px] flex justify-center items-center">
-              <Image
-                src="/client-5.png"
-                alt="Client 1"
-                width={80}
-                className="object-cover"
-                height={80}
-              />
-            </SwiperSlide>
-            <SwiperSlide className="text-[18px] flex justify-center items-center">
-              <Image
-                src="/client-2.png"
-                alt="Client 1"
-                width={80}
-                className="object-cover"
-                height={80}
-              />
-            </SwiperSlide>
-            <SwiperSlide className="text-[18px] flex justify-center items-center">
-              <Image
-                src="/client-6.png"
-                alt="Client 1"
-                width={80}
-                className="object-cover"
-                height={80}
-              />
-            </SwiperSlide>
-            <SwiperSlide className="text-[18px] flex justify-center items-center">
-              <Image
-                src="/client-7.png"
-                alt="Client 1"
-                width={80}
-                className="object-cover"
-                height={80}
-              />
-            </SwiperSlide>
-            <SwiperSlide className="text-[18px] flex justify-center items-center">
-              <Image
-                src="/client-4.png"
-                alt="Client 1"
-                width={80}
-                className="object-cover"
-                height={80}
-              />
-            </SwiperSlide>
-            <SwiperSlide className="text-[18px] flex justify-center items-center">
-              <Image
-                src="/client-4.png"
-                alt="Client 1"
-                width={80}
-                className="object-cover"
-                height={80}
-              />
-            </SwiperSlide>
+            {clients.map((img, i) => (
+              <SwiperSlide
+                key={i}
+                className="flex justify-center items-center"
+              >
+                <Image
+                  src={img}
+                  alt={`Client ${i + 1}`}
+                  width={80}
+                  height={80}
+                  className="w-[70px] h-auto object-contain"
+                />
+              </SwiperSlide>
+            ))}
           </Swiper>
         </div>
       </div>
