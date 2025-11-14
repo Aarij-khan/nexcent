@@ -9,7 +9,7 @@ function Demo() {
             Pellentesque suscipit fringilla libero eu.
           </h1>
           <button className="bg-[#4CAF4F] cursor-pointer text-white px-5 py-3 rounded-md">
-            Get a demo &rarr;
+            Get a demo &rarr; 
           </button>
         </div>
       </div>
